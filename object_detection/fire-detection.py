@@ -23,12 +23,12 @@ from collections import defaultdict
 from io import StringIO
 from PIL import Image
 
-
+import sys
+# sys.path.append('../object_detection/utils')
 # This is needed since the code is stored in the object_detection folder.
-sys.path.append("..")
+# sys.path.append("..")
 from object_detection.utils import ops as utils_ops
-
-
+# import ops as utils_ops
 
 # ## Object detection imports
 # Here are the imports from the object detection module.
