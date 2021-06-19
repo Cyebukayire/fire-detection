@@ -20,6 +20,7 @@ import six
 
 import tensorflow as tf
 
+# from core import *
 from object_detection.core import standard_fields as fields
 from object_detection.utils import shape_utils
 from object_detection.utils import static_shape
