@@ -23,12 +23,12 @@ from collections import defaultdict
 from io import StringIO
 from PIL import Image
 
-
+import sys
+# sys.path.append('../object_detection/utils')
 # This is needed since the code is stored in the object_detection folder.
 sys.path.append("..")
 from object_detection.utils import ops as utils_ops
-
-
+# import ops as utils_ops
 
 # ## Object detection imports
 # Here are the imports from the object detection module.
@@ -36,10 +36,8 @@ from object_detection.utils import ops as utils_ops
 # In[3]:
 
 
-from utils import label_map_util
-
-from utils import visualization_utils as vis_util
-
+from object_detection.utils import label_map_util
+from object_detection.utils import visualization_utils as vis_util
 
 # # Model preparation 
 
@@ -79,7 +77,6 @@ with detection_graph.as_default():
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
-
 
 
 # # Detection
