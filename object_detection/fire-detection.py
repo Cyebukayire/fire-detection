@@ -86,7 +86,6 @@ category_index = label_map_util.create_category_index(categories)
 
 
 
-
 # # Detection
 
 # In[10]:
